@@ -1,0 +1,16 @@
+{
+    "accounts": [
+        {
+            "name": "Anton",
+            "password": "cheeseball"
+        },
+        {
+            "name": "Elvira",
+            "password": "snowball"
+        },
+        {
+            "name": "Roj",
+            "password": "mudball"
+        }
+    ]
+}
