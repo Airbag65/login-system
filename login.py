@@ -10,7 +10,6 @@ account_found = False
 # Strings
 chosen_account = ""
 active_password = ""
-compared_account = ""
 user_choice = ""
 
 # Integers
@@ -22,7 +21,7 @@ possible_passwords = open_json.open_accounts()[1]
 
 
 def choose_account():
-    global available_accounts, chosen_account, compared_account, possible_passwords, active_password, num, account_found
+    global available_accounts, chosen_account, possible_passwords, active_password, num, account_found
 
     num = -1
     print("\nAvailable accounts: ")
