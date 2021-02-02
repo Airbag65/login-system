@@ -8,7 +8,6 @@ logged_in = False
 account_found = False
 
 # Strings
-password = "snöboll"
 chosen_account = ""
 active_password = ""
 compared_account = ""
