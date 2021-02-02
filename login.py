@@ -2,7 +2,6 @@ from time import sleep
 import json
 import open_json
 
-
 # Booleans
 logged_in = False
 account_found = False
@@ -12,6 +11,7 @@ password = "snöboll"
 chosen_account = ""
 active_password = ""
 compared_account = ""
+user_choice = ""
 
 # Integers
 num = -1
@@ -22,13 +22,7 @@ possible_passwords = open_json.open_accounts()[1]
 
 
 def choose_account():
-    global available_accounts
-    global chosen_account
-    global compared_account
-    global possible_passwords
-    global active_password
-    global num
-    global account_found
+    global available_accounts, chosen_account, compared_account, possible_passwords, active_password, num, account_found
 
     num = -1
     print("\nAvailable accounts: ")
@@ -72,9 +66,15 @@ def system():
 
 
 def run():
-    global logged_in
-    global chosen_account
-    global account_found
+    global logged_in, chosen_account, account_found, user_choice
+
+    user_choice = input("Do you want to log into an existing account or create a new account? [L/C]: ")
+    if user_choice.lower() == 'l':
+        print("")
+    elif user_choice.lower() == 'c':
+        import add_account
+        add_account.create_account()
+
     while account_found == False:
         choose_account()
     while logged_in == False:
