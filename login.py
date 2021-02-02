@@ -1,6 +1,7 @@
 from time import sleep
 import json
 import open_json
+import add_account
 
 # Booleans
 logged_in = False
@@ -72,7 +73,6 @@ def run():
     if user_choice.lower() == 'l':
         print("")
     elif user_choice.lower() == 'c':
-        import add_account
         add_account.create_account()
 
     while account_found == False:
