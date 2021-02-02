@@ -16,13 +16,16 @@ user_choice = ""
 num = -1
 
 # Imported arrays from open_json.py
-available_accounts = open_json.open_accounts()[0]
-possible_passwords = open_json.open_accounts()[1]
+available_accounts = []
+possible_passwords = []
 
 
 def choose_account():
     global available_accounts, chosen_account, possible_passwords, active_password, num, account_found
 
+    available_accounts = open_json.open_accounts()[0]
+    possible_passwords = open_json.open_accounts()[1]
+    
     num = -1
     print("\nAvailable accounts: ")
     for i in available_accounts:
