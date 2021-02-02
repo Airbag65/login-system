@@ -36,6 +36,3 @@ def create_password():
     global password, confirm_password
     password = input("\nSelect a password for the new account.\nEnter new password: ")  
     confirm_password = input("Please confirm the password: ")
-
-
-create_account()
