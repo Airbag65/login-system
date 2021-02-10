@@ -35,3 +35,11 @@ the existing JSON data with the new array containing all the old accounts and th
 The functionality to add new accounts has now also been implemented. 
 The source code for that can be found in the add_account.py file.
 For the entire program to run, you just simply run the login.py file and all the other files should be connected. 
+
+# Update 10 Feb 2021
+I have now found a way to put this to use. I have created a script with this as it's fundamentals for 
+logging in and selecting the active account. The script is a way to send emails without having to open a browser. 
+The user does simply login to their account which has their email information linked to it. The text of the email is stored in 
+a .txt file separate to the script. In this way, the user can take all the time they need to think about what to type in the mail before sending 
+since the UI is just a textfile and not the mail interface, which can for some invoke stress. Just as a sidenote however, I am very well aware that 
+such a thing is totally unecessary but I thought it was a fun thing to work on. 
